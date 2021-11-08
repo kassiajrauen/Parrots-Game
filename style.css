@@ -1,0 +1,110 @@
+body{
+    align-items: center;
+    background-color: #EEF9BF;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.conteudo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    align-items: center;
+    display: flex;
+    height: 63px;
+    justify-content: center;
+    margin: 40px 285px 47px 285px;
+    width: 540px; 
+}
+
+h1{
+    color: #75B79E;
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.card{
+    width: 117px;
+    height: 146px;
+    position: relative;
+}
+
+.gifs{
+    position: relative;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    background-color: #A7E9AF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
+}
+
+
+.back-face {
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+.card-selected .front-face{
+    transform: rotateY(-180deg);
+}
+
+.card-selected .back-face{
+    transform: rotateY(0deg);
+}
+
+
+/* .carta:hover .back-face {
+    
+}
+
+.carta:hover .front-face {
+    transform: rotateY(-180deg);
+} */
+
+/* .flip {
+    transform: rotateY(0deg);
+} */
+
+@media (max-width: 335px){
+    .nome-do-jogo {
+        width: 100%;
+        align-items: center;
+    }
+    
+    main, .carta{
+        display: block;
+        margin: 45px;
+    }
+}
